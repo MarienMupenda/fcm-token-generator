@@ -1,0 +1,17 @@
+POST https://fcm.googleapis.com/fcm/send
+Accept: application/json
+Authorization:key=AAAAN9Ekf3A:APA91bGkHm9Uq6z-4Q9xzWj44cNXAyacFf8y4z-ZvUPkBRKqnceFnlDsUwNYE41DL-xVnxjSFudFhUxEWSFSa3IGwxEg9JqQ0VAlmgzwHhE7O_P5Q3bwOUD0pOjIAAjf9VLJDnZuxXfs
+Content-Type: application/json
+
+{
+    "registration_ids": [
+        "eqPVM4IUgqj49dqZVuGG50:APA91bH7ViiaGMk8BzxApKhRSUAAc_vU2xvzr8W9TnNB1BvlUGZImvdBAW7XyatRVU-0VLxx5BQotyQkaFITo7Bxxp-LD9wumAA7_5W5xsRybBGf4N4B-Xd4y2DLhK8ppBJeiw7Hnr2L",
+        "e5nv7nFe5fgyH28B-DbFal:APA91bGErSFxCQ-8JWhnA4hMhUkmhJkSn7vDwQR4jOHe63sX1powVo_aBYMl0V6jsBlC6igZN3HEmhurdHRXDaO2XcuiGjctRZ657zlfCVVckieeNC9rWZKNkTezCK2VW1vYfozS7k2Z"
+    ],
+    "notification": {
+        "title": "FCM Message",
+        "body": "This is an FCM Message",
+        "icon": "https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png",
+        "click_action": "https://google.com"
+    }
+}
