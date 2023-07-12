@@ -10,7 +10,7 @@ Content-Type: application/json
     ],
     "notification": {
         "title": "FCM Message",
-        "body": "This is an FCM Message",
+        "body": "Hello Ahmed",
         "icon": "https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png",
         "click_action": "https://google.com"
     }

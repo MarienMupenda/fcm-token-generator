@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb4218e59f57e261f6d934c5a9f437d0",
+    "content-hash": "d0e373d8d326e12cb4254162c0da9135",
     "packages": [
         {
             "name": "brick/math",
@@ -3107,6 +3107,129 @@
                 }
             ],
             "time": "2023-04-15T23:01:58+00:00"
+        },
+        {
+            "name": "smirltech/laravel-fcm",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "C:/Projets/Packages/laravel-fcm",
+                "reference": "5759fe97153b8a5301624ffec19e50e0f79e4ca5"
+            },
+            "require": {
+                "illuminate/notifications": "^8.0|^9.0|^10.0",
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.14.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.6",
+                "nunomaduro/collision": "^7.6",
+                "orchestra/testbench": "^8.0.8",
+                "pestphp/pest": "^2.7",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "phpunit/phpunit": "^10.2.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SmirlTech\\LaravelFcm\\Providers\\LaravelFcmServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelFcm": "SmirlTech\\LaravelFcm\\Facades\\LaravelFcm"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SmirlTech\\LaravelFcm\\": "src",
+                    "SmirlTech\\LaravelFcm\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "SmirlTech\\LaravelFcm\\Tests\\": "tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gentrit Abazi",
+                    "email": "gentritabazi01@gmail.com"
+                },
+                {
+                    "name": "Marien Mupenda",
+                    "email": "marien@smirlech.com"
+                }
+            ],
+            "description": "Laravel Firebase Cloud Messaging.",
+            "homepage": "https://github.com/smirltech/laravel-fcm",
+            "transport-options": {
+                "relative": false
+            }
+        },
+        {
+            "name": "spatie/laravel-package-tools",
+            "version": "1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "efab1844b8826443135201c4443690f032c3d533"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/efab1844b8826443135201c4443690f032c3d533",
+                "reference": "efab1844b8826443135201c4443690f032c3d533",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.28|^10.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7|^8.0",
+                "pestphp/pest": "^1.22",
+                "phpunit/phpunit": "^9.5.24",
+                "spatie/pest-plugin-test-time": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelPackageTools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
+            "keywords": [
+                "laravel-package-tools",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.15.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-04-27T08:09:01+00:00"
         },
         {
             "name": "symfony/console",
@@ -8048,7 +8171,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,

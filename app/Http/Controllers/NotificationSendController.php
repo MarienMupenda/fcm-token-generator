@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Auth;
 use Illuminate\Http\Request;
+use SmirlTech\LaravelFcm\Facades\LaravelFcm;
 
 class NotificationSendController extends Controller
 {
@@ -18,6 +19,14 @@ class NotificationSendController extends Controller
     }
 
     public function sendNotification(Request $request)
+    {
+        $fcmTokens = User::whereNotNull('device_token')->pluck('device_token')->all();
+        return LaravelFcm::withTitle('Notification Title')
+            ->withBody('Notification Body')
+            ->sendMessage($fcmTokens);
+    }
+
+    public function sendNotification2(Request $request)
     {
         $url = 'https://fcm.googleapis.com/fcm/send';
 
