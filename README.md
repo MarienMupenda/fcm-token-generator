@@ -9,6 +9,7 @@
 ```bash 
 composer install
 npm install
+vite build
 ```
 
 ## 3. Run the appplication to generate the FCM token
