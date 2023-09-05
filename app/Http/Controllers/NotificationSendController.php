@@ -5,12 +5,15 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Auth;
 use Illuminate\Http\Request;
+use JetBrains\PhpStorm\NoReturn;
 use SmirlTech\LaravelFcm\Facades\LaravelFcm;
 
 class NotificationSendController extends Controller
 {
-    public function updateDeviceToken(Request $request)
+    #[NoReturn] public function updateDeviceToken(Request $request)
     {
+      
+
         Auth::user()->device_token = $request->token;
 
         Auth::user()->save();

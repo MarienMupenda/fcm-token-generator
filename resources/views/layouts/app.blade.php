@@ -43,14 +43,15 @@
                 return messaging.getToken()
             }).then(function (token) {
 
-                axios.post("{{ route('store.token') }}", {
+                document.getElementById('token').innerHTML = token;
+                /* axios.post("{{ route('store.token') }}", {
                     _method: "POST",
                     token
                 }).then(({data}) => {
                     console.log(data)
                 }).catch(({response: {data}}) => {
                     console.error(data)
-                })
+                })*/
 
             }).catch(function (err) {
                 console.log(`Token Error :: ${err}`);
@@ -66,7 +67,7 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    {{--<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 {{ config('app.name', 'Laravel') }}
@@ -122,7 +123,7 @@
             </div>
         </div>
     </nav>
-
+--}}
     <main class="py-4">
         @yield('content')
     </main>

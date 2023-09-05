@@ -5,12 +5,12 @@ Content-Type: application/json
 
 {
     "registration_ids": [
-        "eqPVM4IUgqj49dqZVuGG50:APA91bH7ViiaGMk8BzxApKhRSUAAc_vU2xvzr8W9TnNB1BvlUGZImvdBAW7XyatRVU-0VLxx5BQotyQkaFITo7Bxxp-LD9wumAA7_5W5xsRybBGf4N4B-Xd4y2DLhK8ppBJeiw7Hnr2L",
+        "eTko53zKZhQVzFXbG9-gYp:APA91bHF4iUyHk8BAIF_iPX5owFgcwV11hlkw1Bn_7ykfIfFu_n6lu-exz87xeQ3NKIVp0kEUEf0WoKOfjEd8J3IYbKLS3BTGblbt9eC5F466muonIRTvEdIR7ur5u715gwGKZY0qoIo",
         "e5nv7nFe5fgyH28B-DbFal:APA91bGErSFxCQ-8JWhnA4hMhUkmhJkSn7vDwQR4jOHe63sX1powVo_aBYMl0V6jsBlC6igZN3HEmhurdHRXDaO2XcuiGjctRZ657zlfCVVckieeNC9rWZKNkTezCK2VW1vYfozS7k2Z"
     ],
     "notification": {
-        "title": "FCM Message",
-        "body": "Hello Ahmed",
+        "title": "Hello Pierre",
+        "body": "Everything is working fine.",
         "icon": "https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png",
         "click_action": "https://google.com"
     }
